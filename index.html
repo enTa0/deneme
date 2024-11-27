@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şık Web Sayfası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hoş Geldiniz!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#about">Hakkımızda</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                    <li><a href="#game">Oyun</a></li>
+                    <li><a href="#weather">Hava Durumu</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="home">
+            <h2>Ana Sayfa</h2>
+            <p>Bu şık ve etkileşimli bir web sayfasıdır.</p>
+            <button id="greetButton">Merhaba De</button>
+        </section>
+        <section id="about">
+            <h2>Hakkımızda</h2>
+            <p>Biz, kullanıcılara en iyi deneyimi sunmayı hedefleyen bir ekibiz.</p>
+        </section>
+        <section id="contact">
+            <h2>İletişim</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="İsminiz" required>
+                <input type="email" id="email" placeholder="E-postanız" required>
+                <textarea id="message" placeholder="Mesajınız" required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+        <section id="game">
+            <h2>Oyun</h2>
+            <div id="gameContainer">
+                <div id="target"></div>
+            </div>
+            <p>Puan: <span id="score">0</span></p>
+            <button id="startGameButton">Oyunu Başlat</button>
+        </section>
+        <section id="weather">
+            <h2>Hava Durumu</h2>
+            <p>Güncel hava durumu: <span id="weatherInfo">Bilgi yok</span></p>
+            <button id="fetchWeatherButton">Hava Durumunu Getir</button>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Şık Web Sayfası. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
